@@ -1,7 +1,7 @@
 package functionalInterface;
 
 //SAM-Single abstract method
-public interface WebPage {
+public interface FunctionalInterfaceBasics {
 	
 	void header(String value);
 	
@@ -24,9 +24,12 @@ having only one abstract method
 @Functional Interface
 
 types of functional interface
-unary operator
-BinaryOperator
-Function<T,R
+unary operator<T>
+BinaryOperator<T>
+Function<T,R>
+Predicate<T,U>
+Supplier<T>
+Consumer<T>  -System.out::println
 
 
 
