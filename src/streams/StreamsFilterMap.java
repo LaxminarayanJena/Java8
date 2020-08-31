@@ -11,7 +11,12 @@ public class StreamsFilterMap {
         List<Integer> list = Arrays.asList(3, 6, 9, 12, 15); 
         list.stream().map(number -> number * 3).forEach(System.out::println); 
         
-        
+        List<Integer> even = list.stream()
+                .map(s -> Integer.valueOf(s))
+                .filter(number -> number % 2 == 0)
+                .collect(Collectors.toList());
+          System.out.println( even); //[6, 12]
+
         
 		List<Customer> customerList =Arrays.asList(
 				new Customer("Tom",30),
