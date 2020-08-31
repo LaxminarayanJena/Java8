@@ -20,7 +20,7 @@ public class Employee {
 	public void addDevices(String deviceName)
 	{
 		
-		if(deviceName ==null)
+		if(this.devices ==null)
 		{
 			this.devices=new HashSet<>();
 			
